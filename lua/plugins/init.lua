@@ -1,5 +1,4 @@
 -- Require all files in directory
-
 local config_path = vim.fn.stdpath("config")
 local directory_name = "plugins"
 
