@@ -1,3 +1,7 @@
+vim.g.mapleader = " " -- Prefix used for many keybinds
+
+require("plugins") -- Will load plugins directory automatically
+
 -- Set default indentation length (in spaces)
 vim.bo.shiftwidth = 2
 vim.bo.softtabstop = 2
