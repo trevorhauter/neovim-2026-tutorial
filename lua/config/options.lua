@@ -1,4 +1,4 @@
-vim.g.mapleader = " " -- Prefix used for many keybinds
+vim.g.mapleader = " " -- Prefix used for keybinds
 
 require("plugins") -- Will load plugins directory automatically
 
