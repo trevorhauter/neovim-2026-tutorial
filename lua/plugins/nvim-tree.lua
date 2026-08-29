@@ -20,11 +20,14 @@ require("nvim-tree").setup({
     filters = { custom = { "^.git$", "^.gitignore$" } },
 })
 
+
+local nvim_tree_api = require("nvim-tree.api")
+
 -- Toggle nvim-tree in normal mode with ctrl + n
 vim.keymap.set(
     "n",
     "<C-n>",
-    ":NvimTreeToggle<CR>",
+    nvim_tree_api.tree.toggle,
     { noremap = true, silent = true }
 )
 
@@ -32,6 +35,12 @@ vim.keymap.set(
 vim.keymap.set(
     "n",
     "<leader>n",
-    ":NvimTreeFindFile<CR>",
+    function()
+        nvim_tree_api.tree.find_file({
+            open = true,
+            update_root = "<bang>",
+            focus = true,
+        })
+    end,
     { noremap = true, silent = true }
 )
