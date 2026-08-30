@@ -11,5 +11,5 @@ vim.keymap.set({ "n", "v" }, "<leader>d", fzf.git_status)
 -- Search files throughout the project
 vim.keymap.set({ "n", "v" }, "<leader>f", fzf.files)
 
--- Search
+-- Search for the highlighted phrase, or the word under your cursor
 vim.keymap.set({ "n", "v" }, "sw", fzf.grep_cword)
