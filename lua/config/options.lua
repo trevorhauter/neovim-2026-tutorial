@@ -34,3 +34,6 @@ vim.opt.swapfile = false
 
 -- Wrap text at edge of screen
 vim.opt.wrap = true
+
+-- load in any color overrides after everything else
+require("config.colors")
