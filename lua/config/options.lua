@@ -35,5 +35,10 @@ vim.opt.swapfile = false
 -- Wrap text at edge of screen
 vim.opt.wrap = true
 
+-- Adjust styling of all floating windows
+vim.api.nvim_set_hl(0, "NormalFloat", { link = "Normal" })
+vim.api.nvim_set_hl(0, "FloatBorder", { link = "FloatBorder" })
+vim.api.nvim_set_hl(0, "FloatTitle", { link = "Title" })
+
 -- load in any color overrides after everything else
 require("config.colors")
