@@ -1,6 +1,7 @@
 vim.g.mapleader = " " -- Prefix used for keybinds
 
 require("plugins") -- Will load plugins directory automatically
+require("config.lsps")
 
 -- Set default indentation length (in spaces)
 vim.bo.shiftwidth = 2
